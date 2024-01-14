@@ -27,7 +27,7 @@ function Header() {
         </div>
       )}
       {isAuthenticated && !isLoading && (
-        <Button asChild>
+        <Button asChild className="dark:text-black">
           <Link href="/documents">
             Enter Jotion
             <ArrowRight className="h-4 w-4 ml-2" />

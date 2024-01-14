@@ -97,15 +97,15 @@ export const Publish = ({ initialData }: PublishProps) => {
                 className="h-8 rounded-l-none"
               >
                 {copied ? (
-                  <Check className="h-4 w-4" />
+                  <Check className="h-4 w-4 dark:text-black hover:dark:text-black" />
                 ) : (
-                  <Copy className="h-4 w-4" />
+                  <Copy className="h-4 w-4 dark:text-black hover:dark:text-black" />
                 )}
               </Button>
             </div>
             <Button
               size="sm"
-              className="w-full text-xs"
+              className="w-full text-xs dark:bg-teal-500 hover:dark:text-black"
               disabled={isSubmitting}
               onClick={onUnpublish}
             >
@@ -113,7 +113,7 @@ export const Publish = ({ initialData }: PublishProps) => {
             </Button>
           </div>
         ) : (
-          <div className="flex flex-col items-center justify-center">
+          <div className="flex flex-col items-center justify-center ">
             <Globe className="h-8 w-8 text-muted-foreground mb-2" />
             <p className="text-sm font-medium mb-2">Publish this note</p>
             <span className="text-xs text-muted-foreground mb-4">
@@ -122,7 +122,7 @@ export const Publish = ({ initialData }: PublishProps) => {
             <Button
               disabled={isSubmitting}
               onClick={onPublish}
-              className="w-full text-xs"
+              className="w-full text-xs dark:bg-teal-500 hover:dark:text-black"
               size="sm"
             >
               Publish

@@ -47,7 +47,7 @@ function Title({ initialData }: TitleProps) {
   };
 
   return (
-    <div className="flex items-center gap-x-1">
+    <div className="flex items-center gap-x-1 dark:text-white">
       {!!initialData.icon && <p>{initialData.icon}</p>}
       {isEditing ? (
         <Input
